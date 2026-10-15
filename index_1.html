@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>[단독] '허연 파프리카' 로너, 강원랜드서 포착 | 기스패치</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;900&family=Noto+Serif+KR:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f7f3ee; --surface:#ffffff; --ink:#1c1a24; --muted:#6b6676;
+  --hot:#e4215b; --hl:#ffe14a; --line:#d9d2c8; --adbg:#fff6c9; --adink:#1c1a24;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#16141c; --surface:#201d29; --ink:#f1edf6; --muted:#a29cb0;
+    --hot:#ff4d86; --hl:#ffe14a; --line:#38334a; --adbg:#2a2540; --adink:#f1edf6;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16141c; --surface:#201d29; --ink:#f1edf6; --muted:#a29cb0;
+  --hot:#ff4d86; --hl:#ffe14a; --line:#38334a; --adbg:#2a2540; --adink:#f1edf6;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.7}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 18px}
+
+/* masthead */
+.mast{background:var(--ink);color:var(--bg)}
+.mast .wrap{display:flex;align-items:baseline;justify-content:space-between;padding-top:14px;padding-bottom:14px;gap:12px}
+.logo{font-weight:900;font-size:1.7rem;letter-spacing:-.04em;margin:0}
+.logo span{background:var(--hot);color:#fff;padding:0 .3em;margin-left:.1em;transform:rotate(-3deg);display:inline-block}
+.mast small{opacity:.7;font-size:.8rem}
+nav{border-bottom:3px solid var(--ink);background:var(--surface)}
+nav .wrap{display:flex;gap:20px;overflow-x:auto;white-space:nowrap;padding-top:9px;padding-bottom:9px;font-weight:500;font-size:.92rem}
+nav span{color:var(--muted)}
+nav span.on{color:var(--hot);font-weight:900}
+
+/* top banner ad */
+.topad{margin:18px 0 0;background:var(--adbg);color:var(--adink);border:2px dashed var(--ink);padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.topad b{font-size:1.15rem;font-weight:900}
+.topad .btn{background:var(--ink);color:var(--bg);padding:6px 14px;font-weight:700;font-size:.85rem;text-decoration:none}
+.adtag{font-size:.7rem;color:var(--muted);border:1px solid currentColor;padding:0 5px;margin-right:6px}
+
+/* layout */
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:36px;margin:26px 0 50px}
+@media (max-width:860px){.grid{grid-template-columns:1fr}}
+
+/* article */
+article h1{font-size:clamp(1.7rem,4.6vw,2.6rem);line-height:1.25;letter-spacing:-.03em;font-weight:900;margin:.3em 0 .35em}
+article h1 mark{background:linear-gradient(transparent 58%,var(--hl) 58%);color:inherit;padding:0}
+.flash{display:inline-block;background:var(--hot);color:#fff;font-weight:900;padding:2px 10px;font-size:.9rem;transform:rotate(-2deg)}
+.sub{font-size:1.1rem;font-weight:500;color:var(--muted);margin:0 0 14px;border-left:4px solid var(--hot);padding-left:12px}
+.byline{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.82rem;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0;margin-bottom:22px}
+.body{font-family:"Noto Serif KR","Batang",serif;font-size:1.06rem;line-height:1.95;max-width:42em}
+.body p{margin:0 0 1.15em}
+.body h2{font-family:"Noto Sans KR",sans-serif;font-size:1.25rem;font-weight:900;letter-spacing:-.02em;margin:2em 0 .7em;padding:6px 12px;background:var(--ink);color:var(--bg);display:inline-block}
+.body h2::before{content:"■ ";color:var(--hot)}
+blockquote{margin:1.4em 0;padding:14px 18px;background:var(--surface);border:2px solid var(--ink);box-shadow:5px 5px 0 var(--hot);font-weight:600}
+blockquote cite{display:block;font:500 .8rem "Noto Sans KR",sans-serif;color:var(--muted);margin-top:4px}
+.fact{background:var(--hl);color:#1c1a24;padding:14px 18px;font-weight:700;margin:1.8em 0;border:2px solid #1c1a24}
+.fact span{font:900 .8rem "Noto Sans KR",sans-serif;display:block;margin-bottom:2px}
+.note{font:400 .8rem/1.6 "Noto Sans KR",sans-serif;color:var(--muted);margin-top:30px;padding-top:12px;border-top:1px solid var(--line)}
+
+/* sidebar */
+aside{display:flex;flex-direction:column;gap:22px}
+.box{background:var(--surface);border:2px solid var(--ink)}
+.box h3{margin:0;padding:8px 14px;background:var(--ink);color:var(--bg);font-size:.95rem;font-weight:900}
+.hot ol{margin:0;padding:10px 14px 12px 34px;font-size:.92rem;line-height:1.5}
+.hot li{padding:6px 0;border-bottom:1px dotted var(--line)}
+.hot li:last-child{border:0}
+.hot li::marker{color:var(--hot);font-weight:900}
+.ad{background:var(--adbg);color:var(--adink);border:2px dashed var(--ink);padding:16px;text-align:center}
+.ad .adtag{display:inline-block;margin-bottom:8px}
+.ad strong{display:block;font-size:1.35rem;font-weight:900;line-height:1.25;letter-spacing:-.03em}
+.ad p{margin:.5em 0 .9em;font-size:.88rem;line-height:1.5}
+.ad .btn{display:inline-block;background:var(--hot);color:#fff;padding:7px 16px;font-weight:700;font-size:.85rem;text-decoration:none}
+.ad.alt{background:var(--hot);color:#fff;border-color:var(--ink)}
+.ad.alt .adtag{color:#fff}
+.ad.alt .btn{background:var(--ink);color:#fff}
+.ad.water{background:#bfe6ff;color:#12324a}
+.ad.water .adtag{color:#12324a}
+.ad.water .btn{background:#0b78c9;color:#fff}
+.sticky{position:sticky;top:calc(12px + env(safe-area-inset-top,0px))}
+footer{background:var(--ink);color:var(--bg);font-size:.8rem;padding:22px 0;opacity:.95}
+footer .wrap{opacity:.75}
+a:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="wrap">
+    <h1 class="logo">기스<span>패치</span></h1>
+    <small>2026.10.15 목요일 · 연예부</small>
+  </div>
+</header>
+<nav aria-label="섹션">
+  <div class="wrap">
+    <span class="on">단독</span><span>연예</span><span>음악</span><span>드라마</span><span>스포츠</span><span>포토</span><span>핫이슈</span>
+  </div>
+</nav>
+
+<div class="wrap">
+  <div class="topad" role="complementary" aria-label="광고">
+    <div><span class="adtag">광고</span><b>강원X드는 열려있습니다. 언제든, 누구든, 무엇이든.</b></div>
+    <span class="btn">입장 안내</span>
+  </div>
+
+  <div class="grid">
+    <article>
+      <span class="flash">단독</span>
+      <h1>'허연 파프리카' 로너, 강원랜드서 포착… <mark>도박 의혹에 수상한 거래·열애설까지</mark></h1>
+      <p class="sub">카지노 장시간 체류에 내부 상점 반복 이용 정황… 소속사 측 해명 없어</p>
+      <div class="byline"><span>기스패치 연예부</span><span>입력 2026.10.15 · 단독 보도</span></div>
+
+      <div class="body">
+        <p>국내 인기 록밴드 '허연 파프리카'의 프론트맨 로너(본명 이로운·31)가 강원랜드에서 포착됐다. 도박 의혹뿐 아니라 시설 내 상점에서의 수상한 거래와 열애설까지 잇따라 제기되며 논란이 확산되고 있다.</p>
+        <p>제보에 따르면 로너(이하 이로운)는 여러 지인과 함께 강원랜드에 머물렀으며, 카지노 시설을 수차례 이용한 것으로 알려졌다. 특히 그가 시설 내 상점을 꾸준히 이용했다는 증언이 나오면서 방문 목적을 둘러싼 의문이 제기되고 있다.</p>
+
+        <h2>"게임하는 모습은 못 봤지만…" 카지노 출입에 엇갈린 증언</h2>
+        <p>목격자 A씨는 "그가 카지노 안에 있는 것을 여러 번 봤다"며 "직접 게임을 하는 모습까지 본 것은 아니지만, 계속 그 근처를 돌아다녔다"고 주장했다.</p>
+        <blockquote>"직접 게임을 하는 모습까지 본 것은 아니지만, 계속 그 근처를 돌아다녔다"<cite>목격자 A씨</cite></blockquote>
+        <p>또 다른 목격자 B씨 역시 "일행과 함께 카지노 시설을 오가는 모습을 봤다"면서도 실제 게임 참여 여부에 대해서는 "정확하게 기억나지 않는다"고 답했다.</p>
+        <p>현재까지 이로운이 카지노에서 직접 베팅하는 모습이 담긴 사진이나 영상은 확보되지 않았다. 다만 카지노 시설에 장시간 머물렀다는 증언이 잇따르고 있는 만큼, 단순 방문으로 단정하기 어려운 상황이다.</p>
+        <p>일각에서는 동창회 참석일 뿐이었다는 해명도 나오고 있지만, 동창회 장소로 카지노를 선택한 경위와 체류 중 행적 등에 대해서는 여전히 의문이 남는다.</p>
+
+        <h2>내부 상점 반복 이용… '혈액 구매' 의혹도 제기</h2>
+        <p>그의 행적 중 특히 눈길을 끄는 것은 시설 내 상점 이용 기록이다.</p>
+        <p>관계자 C씨는 "(이로운이)몇 번이나 상점에 들렀던 것으로 기억한다"며 "구체적으로 무엇을 구매했는지는 알 수 없지만, 단순히 구경만 하고 간 것은 아니었다"고 전했다.</p>
+        <p>이 가운데 이로운이 해당 상점에서 혈액을 구매했다는 주장까지 등장했다. 혈액의 구매 목적과 사용처는 알려지지 않았지만, 유명 가수가 카지노 시설에서 이례적인 물품을 구매했다는 의혹만으로도 온라인에서는 여러 추측이 이어지고 있다. 다만 로너의 상점 이용과 도박 행위 사이에 직접적인 연관성이 있다는 증거는 없는 상태다.</p>
+
+        <h2>카지노에서 피어난 로맨스? 동행인과 열애 의혹</h2>
+        <p>강원랜드에서 특정 인물과 함께 시간을 보내는 모습이 포착되면서 열애설도 제기됐다. 목격자 D씨는 "둘이 함께 있는 모습을 여러 번 봤다"며 "친한 사이처럼 보였다"고 주장했다.</p>
+        <p>현재까지 해당 인물의 신원이나 이로운과의 정확한 관계는 확인되지 않았다. 함께 방문한 동창 중 한 명일 가능성도 있는 것으로 알려졌다. 그럼에도 일부 온라인 커뮤니티에서는 두 사람이 단순한 지인 이상의 관계가 아니라는 추측이 확산되고 있다.</p>
+        <p>이로운은 데뷔 이후 개인적인 인간관계나 연애사를 거의 공개하지 않았던 인물이다. 이에 팬들의 궁금증도 커지고 있다.</p>
+
+        <h2>데뷔 10년 차 인기 록스타의 사생활 논란… 소속사는 침묵</h2>
+        <p>'허연 파프리카'는 꾸준한 활동을 이어오며 대중적인 인지도를 쌓아온 록밴드다.</p>
+        <p>프론트맨 이로운은 폭발적인 무대 매너와 달리 평소에는 말수가 적고 조용한 성격으로 알려져 있다. 특히 사생활 노출을 극도로 꺼리는 모습으로 팬들 사이에서는 '무대 밖에서는 평범한 사람'이라는 평가를 받아왔다.</p>
+        <p>그러나 이번 강원랜드 방문을 둘러싼 의혹이 연이어 제기되면서 그의 이미지와 밴드활동에 적지 않은 타격이 예상된다.</p>
+        <p>일각에서는 "게임하는 모습을 본 사람도 없는데 도박으로 몰아가는 것은 지나치다"는 반응과 "공인으로서 오해를 살 만한 행동을 한 것은 사실"이라는 의견이 엇갈리고 있다.</p>
+        <p>본지는 해당 의혹에 관해 소속사 측에 입장을 요청했으나, 현재까지 공식적인 답변을 받지 못했다.</p>
+        <p><strong>기스패치 | 연예부 단독 보도</strong></p>
+      </div>
+
+      <p class="note">이 페이지의 기사, 매체, 인물, 광고는 모두 가상으로 만든 것입니다.</p>
+    </article>
+
+    <aside>
+      <div class="box hot">
+        <h3>지금 많이 보는 기사</h3>
+        <ol>
+          <li>'허연 파프리카' 로너, 강원랜드서 포착</li>
+          <li>팬덤 '화이트' "추측성 보도 자제하라"</li>
+          <li>록 페스티벌 라인업 공개, 헤드라이너는?</li>
+          <li>동창회 장소 논란, 왜 하필 강원도?</li>
+          <li>하율이네 정육식당, 개업 첫날 대기 줄 화제</li>
+        </ol>
+      </div>
+
+      <div class="ad" role="complementary" aria-label="광고">
+        <span class="adtag">광고</span>
+        <strong>하율이네 정육식당<br>리모델링 개업!</strong>
+        <p>신선함이 다릅니다. 개업 기념 전 메뉴 10% 할인.</p>
+        <span class="btn">예약하기</span>
+      </div>
+
+      <div class="ad water" role="complementary" aria-label="광고">
+        <span class="adtag">광고</span>
+        <strong>물을 믿으라<br>신흥 종교 유행중</strong>
+        <p>목마른 당신께. 첫 방문 시 생수 한 병 증정.</p>
+        <span class="btn">물 마시러 가기</span>
+      </div>
+
+      <div class="ad" role="complementary" aria-label="광고">
+        <span class="adtag">광고</span>
+        <strong>유명 동화책 작가<br>류 건, 신작 발매</strong>
+        <p>어른을 위한 새 이야기. 전국 서점 및 온라인 동시 판매.</p>
+        <span class="btn">미리 보기</span>
+      </div>
+
+      <div class="ad alt" role="complementary" aria-label="광고">
+        <span class="adtag">광고</span>
+        <strong>양일고등학교<br>2기 엔딩 축하</strong>
+        <p>엔 서이 문수님 ㅅㄱ하셨습니다</p>
+        <span class="btn">축하 남기기</span>
+      </div>
+
+      <div class="ad" role="complementary" aria-label="광고">
+        <span class="adtag">광고</span>
+        <strong>보컬로이드는<br>애니메이션이 아닙니다</strong>
+        <p>음성 합성 소프트웨어입니다. 오해 없으시길 바랍니다.</p>
+        <span class="btn">바로잡기</span>
+      </div>
+
+      <div class="sticky">
+        <div class="ad alt" role="complementary" aria-label="광고">
+          <span class="adtag">공익광고</span>
+          <strong>도박중독 치료는<br>1336</strong>
+          <p>혼자 고민하지 마세요. 전화 한 통으로 상담을 시작할 수 있습니다.</p>
+          <a class="btn" href="tel:1336">1336 전화하기</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">© 기스패치 (가상 매체) · 본 페이지는 연습용 가상 콘텐츠입니다.</div>
+</footer>
+</body>
+</html>
